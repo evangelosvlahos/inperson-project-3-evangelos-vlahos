@@ -46,8 +46,30 @@
             <p>Let's work together!</p>
             
             <form class="contact-form">
-                <!-- TODO: Add HTML5 form inputs here -->
-                <!-- Students will add various input types during class -->
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+
+
+                <fieldset>
+                    <legend>Preferred Contact Method:</legend>
+                    <input type="radio" id="contact-email" name="contact" value="email">
+                    <label for="contact-email">Email</label>
+                    <input type="radio" id="contact-phone" name="contact" value="phone">
+                    <label for="contact-phone">Phone</label>
+                </fieldset>
+
+
+                <!-- Reference the data.js file for the contact information -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
             </form>
         </section>
     </main>
